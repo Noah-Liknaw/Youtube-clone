@@ -16,7 +16,7 @@ dependencies:
   miniplayer: ^1.0.0+2
   timeago: ^3.0.2
   youtube_player_flutter: ^8.1.2
-
+  url_launcher: ^6.1.7
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -26,3 +26,4 @@ flutter:
 
   assets:
     - assets/
+

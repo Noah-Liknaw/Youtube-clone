@@ -48,7 +48,7 @@ final List<Video> videos = [
     id: 'x606y4QWrxo',
     author: currentUser,
     title: 'Flutter Clubhouse Clone UI Tutorial | Apps From Scratch',
-    thumbnailUrl: 'temp1.jpg',
+    thumbnailUrl: 'lung/v1.png',
     videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
     duration: '8:20',
     timestamp: DateTime(2021, 3, 20),
@@ -61,7 +61,7 @@ final List<Video> videos = [
     id: 'vrPk6LB9bjo',
     title:
         'Build Flutter Apps Fast with Riverpod, Firebase, Hooks, and Freezed Architecture',
-    thumbnailUrl: 'temp2.jpg',
+    thumbnailUrl: 'lung/v2.png',
     videoUrl: 'sth.mp4',
     duration: '22:06',
     timestamp: DateTime(2021, 2, 26),
@@ -70,18 +70,57 @@ final List<Video> videos = [
     dislikes: '8',
   ),
   Video(
-    id: 'ilX5hnH8XoI',
+    id: 'x606y4QWrxo',
     author: currentUser,
-    title: 'Flutter Instagram Stories',
-    thumbnailUrl: 'temp3.jpg',
-    videoUrl: 'sth.mp4',
-    duration: '10:53',
-    timestamp: DateTime(2020, 7, 12),
-    viewCount: '18K',
-    likes: '1k',
+    title: 'Flutter Clubhouse Clone UI Tutorial | Apps From Scratch',
+    thumbnailUrl: 'lung/v1.png',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+    duration: '8:20',
+    timestamp: DateTime(2021, 3, 20),
+    viewCount: '10K',
+    likes: '958',
     dislikes: '4',
   ),
+  Video(
+    author: currentUser,
+    id: 'vrPk6LB9bjo',
+    title:
+        'Build Flutter Apps Fast with Riverpod, Firebase, Hooks, and Freezed Architecture',
+    thumbnailUrl: 'lung/v2.png',
+    videoUrl: 'sth.mp4',
+    duration: '22:06',
+    timestamp: DateTime(2021, 2, 26),
+    viewCount: '8K',
+    likes: '485',
+    dislikes: '8',
+  ),Video(
+    id: 'x606y4QWrxo',
+    author: currentUser,
+    title: 'Flutter Clubhouse Clone UI Tutorial | Apps From Scratch',
+    thumbnailUrl: 'lung/v1.png',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+    duration: '8:20',
+    timestamp: DateTime(2021, 3, 20),
+    viewCount: '10K',
+    likes: '958',
+    dislikes: '4',
+  ),
+  Video(
+    author: currentUser,
+    id: 'vrPk6LB9bjo',
+    title:
+        'Build Flutter Apps Fast with Riverpod, Firebase, Hooks, and Freezed Architecture',
+    thumbnailUrl: 'lung/v2.png',
+    videoUrl: 'sth.mp4',
+    duration: '22:06',
+    timestamp: DateTime(2021, 2, 26),
+    viewCount: '8K',
+    likes: '485',
+    dislikes: '8',
+  ),
 ];
+
+
 
 final List<Video> suggestedVideos = [
   Video(
@@ -121,3 +160,4 @@ final List<Video> suggestedVideos = [
     dislikes: '85',
   ),
 ];
+

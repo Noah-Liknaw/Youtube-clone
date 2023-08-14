@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_youtube_ui/data.dart';
+import 'package:flutter_youtube_ui/screens/bookSection.dart';
+import 'package:flutter_youtube_ui/screens/contactUs.dart';
 import 'package:flutter_youtube_ui/screens/home_screen.dart';
 import 'package:flutter_youtube_ui/screens/video_screen.dart';
 import 'package:miniplayer/miniplayer.dart';
@@ -26,8 +28,8 @@ class _NavScreenState extends State<NavScreen> {
     HomeScreen(),
     const Scaffold(body: Center(child: Text('Explore'))),
     const Scaffold(body: Center(child: Text('Add'))),
-    const Scaffold(body: Center(child: Text('Subscriptions'))),
-    const Scaffold(body: Center(child: Text('Library'))),
+    bookSection(),
+    contactUS(),
   ];
 
   @override
@@ -154,31 +156,32 @@ class _NavScreenState extends State<NavScreen> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined),
-            activeIcon: Icon(Icons.home),
-            label: 'Home',
+            activeIcon: Icon(Icons.home,color: Colors.black),
+            label: 'VIDEOS',            
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.explore_outlined),
-            activeIcon: Icon(Icons.explore),
-            label: 'Explore',
+            activeIcon: Icon(Icons.explore,color: Colors.black),
+            label: 'SHORTS',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.add_circle_outline),
-            activeIcon: Icon(Icons.add_circle),
-            label: 'Add',
+            activeIcon: Icon(Icons.add_circle,color: Colors.black),
+            label: 'BLOGS',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.subscriptions_outlined),
-            activeIcon: Icon(Icons.subscriptions),
-            label: 'Subscriptions',
+            activeIcon: Icon(Icons.subscriptions,color: Colors.black),
+            label: 'BOOKS',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.video_library_outlined),
-            activeIcon: Icon(Icons.video_library),
-            label: 'Library',
+            activeIcon: Icon(Icons.video_library,color: Colors.black),
+            label: 'ABOUT US',
           ),
         ],
       ),
     );
   }
 }
+
