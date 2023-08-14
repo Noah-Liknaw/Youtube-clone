@@ -49,7 +49,7 @@ final List<Video> videos = [
     author: currentUser,
     title: 'Flutter Clubhouse Clone UI Tutorial | Apps From Scratch',
     thumbnailUrl: 'lung/v1.png',
-    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+    videoUrl: 'https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube',
     duration: '8:20',
     timestamp: DateTime(2021, 3, 20),
     viewCount: '10K',
@@ -62,7 +62,7 @@ final List<Video> videos = [
     title:
         'Build Flutter Apps Fast with Riverpod, Firebase, Hooks, and Freezed Architecture',
     thumbnailUrl: 'lung/v2.png',
-    videoUrl: 'sth.mp4',
+    videoUrl: 'https://www.youtube.com/watch?v=Y2WmaZQIzCg&ab_channel=NewsETSocial',
     duration: '22:06',
     timestamp: DateTime(2021, 2, 26),
     viewCount: '8K',
@@ -161,3 +161,4 @@ final List<Video> suggestedVideos = [
   ),
 ];
 
+String selectedOrgan="";

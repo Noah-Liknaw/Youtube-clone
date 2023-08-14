@@ -4,6 +4,7 @@ import 'package:flutter_youtube_ui/data.dart';
 import 'package:flutter_youtube_ui/screens/bookSection.dart';
 import 'package:flutter_youtube_ui/screens/contactUs.dart';
 import 'package:flutter_youtube_ui/screens/home_screen.dart';
+import 'package:flutter_youtube_ui/screens/shorts.dart';
 import 'package:flutter_youtube_ui/screens/video_screen.dart';
 import 'package:miniplayer/miniplayer.dart';
 
@@ -26,7 +27,7 @@ class _NavScreenState extends State<NavScreen> {
 
   final _screens = [
     HomeScreen(),
-    const Scaffold(body: Center(child: Text('Explore'))),
+    shorts(),
     const Scaffold(body: Center(child: Text('Add'))),
     bookSection(),
     contactUS(),
