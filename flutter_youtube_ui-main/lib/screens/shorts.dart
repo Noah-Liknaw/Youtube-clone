@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_youtube_ui/data.dart';
+import 'package:flutter_youtube_ui/widgets/shorts_card.dart';
 import 'package:flutter_youtube_ui/widgets/widgets.dart';
 
 class shorts extends StatelessWidget {
@@ -7,7 +8,7 @@ class shorts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Shorts section'),
+        title: Text('ሾርትስ ገጽ'),
       ),
       body: Column(
         children: [
@@ -23,11 +24,11 @@ class shorts extends StatelessWidget {
                   sliver: SliverList(
                     delegate: SliverChildBuilderDelegate(
                       (context, index) {
-                        final video = videos[index];
+                        final video = shortsVideos[index];
                         
-                        return VideoCard(video: video);
+                        return shortsCard(video: video);
                       },
-                      childCount: videos.length,
+                      childCount: shortsVideos.length,
                     ),
                   ),
                 ),

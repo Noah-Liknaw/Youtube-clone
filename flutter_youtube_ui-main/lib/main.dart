@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_youtube_ui/screens/home.dart';
+import 'package:flutter_youtube_ui/screens/home_screen.dart';
 import 'package:flutter_youtube_ui/screens/menu.dart';
 import 'package:flutter_youtube_ui/screens/nav_screen.dart';
+import 'package:flutter_youtube_ui/screens/shorts.dart';
 
 void main() {
   runApp(ProviderScope(child: MyApp()));
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
         bottomNavigationBarTheme:
             const BottomNavigationBarThemeData(selectedItemColor: Colors.white),
       ),
-      home: Home(),
+      home: NavScreen(),
     );
   }
 }

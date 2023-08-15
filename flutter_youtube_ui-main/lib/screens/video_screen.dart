@@ -82,7 +82,7 @@ class _VideoScreenState extends State<VideoScreen> {
               SliverList(
                 delegate: SliverChildBuilderDelegate(
                   (context, index) {
-                    final video = suggestedVideos[index];
+                    final video = shortsVideos[index];
                     return VideoCard(
                       video: video,
                       hasPadding: true,
@@ -93,7 +93,7 @@ class _VideoScreenState extends State<VideoScreen> {
                       ),
                     );
                   },
-                  childCount: suggestedVideos.length,
+                  childCount: shortsVideos.length,
                 ),
               ),
             ],

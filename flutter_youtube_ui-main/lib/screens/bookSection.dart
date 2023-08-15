@@ -83,7 +83,7 @@ class _bookSectionState extends State<bookSection> {
         },
       ),*/
       appBar: AppBar(
-        title: Text('Book section'),
+        title: Text('መጳፍት ገጽ'),
       ),
       body:Container(
         height: 200.0,

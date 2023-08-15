@@ -122,7 +122,12 @@ final List<Video> videos = [
 
 
 
-final List<Video> suggestedVideos = [
+
+
+
+
+
+final List<Video> shortsVideos = [
   Video(
     id: 'rJKN_880b-M',
     author: currentUser,

@@ -8,12 +8,12 @@ import 'package:miniplayer/miniplayer.dart';
 import 'package:timeago/timeago.dart' as timeago;
 import 'package:url_launcher/url_launcher.dart';
 
-class VideoCard extends StatelessWidget {
+class shortsCard extends StatelessWidget {
   final Video video;
   final bool hasPadding;
   final  onTap;
 
-   VideoCard({
+   shortsCard({
     Key? key,
     required this.video,
     this.hasPadding = false,
@@ -32,11 +32,11 @@ class VideoCard extends StatelessWidget {
             children: [
               Padding(
                 padding: EdgeInsets.symmetric(
-                  horizontal: hasPadding ? 12.0 : 0,
+                  horizontal: hasPadding ? 12.0 : 40.0,
                 ),
                 child: Image.asset(
                   video.thumbnailUrl,
-                  height: 220.0,
+                  height: 330.0,
                   width: double.infinity,
                   fit: BoxFit.cover,
                 ),
@@ -44,7 +44,7 @@ class VideoCard extends StatelessWidget {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 12),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,

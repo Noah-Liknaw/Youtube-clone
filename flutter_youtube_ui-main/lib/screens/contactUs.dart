@@ -19,13 +19,13 @@ class _contactUSState extends State<contactUS> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Contact Information',
+                'ያግኙን ገጽ',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
               ),
               SizedBox(height: 16.0),
               Text(
-                'Feel free to reach out to us for any inquiries or assistance. We are available via phone, email, or at our physical address. Our team will be happy to help you!',
+                'ለማንኛውም ጥያቄ ወይም እርዳታ እኛን ለማግኘት ነፃነት ይሰማዎ። በስልክ፣ በኢሜል ወይም በአካል አድራሻችን እንገኛለን። ቡድናችን እርስዎን ለመርዳት ደስተኛ ይሆናል!',
                 style: TextStyle(fontSize: 16, color: Colors.black),
                 textAlign: TextAlign.center,
               ),
@@ -33,27 +33,27 @@ class _contactUSState extends State<contactUS> {
               ListTile(
                 leading: Icon(Icons.phone),
                 title: Text(
-                  'Phone: +1 123-456-7890',
+                  'ስልክ: +1 123-456-7890',
                   style: TextStyle(fontSize: 18, color: Colors.black),
                 ),
               ),
               ListTile(
                 leading: Icon(Icons.email),
                 title: Text(
-                  'Email: contact@example.com',
+                  'ኢሜይል: contact@example.com',
                   style: TextStyle(fontSize: 18, color: Colors.black),
                 ),
               ),
               ListTile(
                 leading: Icon(Icons.location_on),
                 title: Text(
-                  'Address: 123 Main St, City, Country',
+                  'አድራሻ: 123 Main St, City, Country',
                   style: TextStyle(fontSize: 18, color: Colors.black),
                 ),
               ),
               SizedBox(height: 32.0),
               Text(
-                'Follow Us',
+                'በማህበራዊ ሚዲያ ላይ ይከተሉን',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
                 textAlign: TextAlign.center,
               ),
