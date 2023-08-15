@@ -177,8 +177,8 @@ class _NavScreenState extends State<NavScreen> {
             label: 'መጳፍት',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.video_library_outlined),
-            activeIcon: Icon(Icons.video_library,color: Colors.black),
+            icon: Icon(Icons.call_outlined),
+            activeIcon: Icon(Icons.call,color: Colors.black),
             label: 'ስለኛ',
           ),
         ],
