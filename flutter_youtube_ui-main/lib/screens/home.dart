@@ -34,7 +34,7 @@ class Home extends StatelessWidget {
                 ),
                 const Text(
                   "የቅን ልቦች ጤና ምክር",
-                  style: TextStyle(fontSize: 42, fontWeight: FontWeight.w600),
+                  style: TextStyle(fontSize: 42, fontWeight: FontWeight.w600,),
                 ),
                 const SizedBox(
                   height: 25,

@@ -11,7 +11,7 @@ class User {
 }
 
 const User currentUser = User(
-  username: 'Marcus Ng',
+  username: 'Abebe',
   profileImageUrl:
       'profile.jpg',
   subscribers: '100K',
@@ -42,6 +42,33 @@ class Video {
     required this.dislikes,
   });
 }
+
+class Blog {
+  final String id;
+  final String author;
+  final String title;
+  final String thumbnailUrl;
+  final String videoUrl;
+  final String likes;
+  final String dislikes;
+
+  const Blog({
+    required this.id,
+    required this.author,
+    required this.title,
+    required this.thumbnailUrl,
+    required this.videoUrl,
+    required this.likes,
+    required this.dislikes,
+  });
+}
+
+final List<Blog> blogs = [
+  Blog(id: "sdafadssad", author: "Abebe", title: "title", thumbnailUrl: "lung/v1.png", videoUrl: "https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube", likes: "likes", dislikes: "dislikes"),
+  Blog(id: "sdafadssad", author: "Abebe", title: "title", thumbnailUrl: "lung/v1.png", videoUrl: "https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube", likes: "likes", dislikes: "dislikes"),
+  Blog(id: "sdafadssad", author: "Abebe", title: "title", thumbnailUrl: "lung/v1.png", videoUrl: "https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube", likes: "likes", dislikes: "dislikes"),
+  Blog(id: "sdafadssad", author: "Abebe", title: "title", thumbnailUrl: "lung/v1.png", videoUrl: "https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube", likes: "likes", dislikes: "dislikes")
+];
 
 final List<Video> videos = [
   Video(
