@@ -47,3 +47,9 @@ def updateProduct(request, pk):
         serializer.save()
 
     return Response(serializer.data)
+@api_view(['GET'])
+def deleteProduct(request, pk):
+    product = Product.objects.get(id=pk)
+    product.delete()
+
+    return Response('Items delete successfully!')
