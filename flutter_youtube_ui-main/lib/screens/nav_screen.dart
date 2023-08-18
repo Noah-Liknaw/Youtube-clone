@@ -103,7 +103,7 @@ class _NavScreenState extends State<NavScreen> {
                                               ),
                                               Flexible(
                                                 child: Text(
-                                                  selectedVideo.author.username,
+                                                  selectedVideo.catagory,
                                                   overflow:
                                                       TextOverflow.ellipsis,
                                                   style: Theme.of(context)
@@ -152,7 +152,7 @@ class _NavScreenState extends State<NavScreen> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: _selectedIndex,
-        onTap: (i) => setState(() => _selectedIndex = i),
+        onTap: (i) => setState(() => _selectedIndex = i,),
         selectedFontSize: 10.0,
         unselectedFontSize: 10.0,
         items: const [

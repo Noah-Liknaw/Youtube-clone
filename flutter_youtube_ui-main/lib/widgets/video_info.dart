@@ -24,15 +24,9 @@ class VideoInfo extends StatelessWidget {
                 Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 15.0),
           ),
           const SizedBox(height: 8.0),
-          Text(
-            '${video.viewCount} views • ${timeago.format(video.timestamp)}',
-            style:
-                Theme.of(context).textTheme.caption!.copyWith(fontSize: 14.0),
-          ),
           const Divider(),
           _ActionsRow(video: video),
           const Divider(),
-          _AuthorInfo(user: video.author),
           const Divider(),
         ],
       ),
@@ -53,8 +47,6 @@ class _ActionsRow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        _buildAction(context, Icons.thumb_up_outlined, video.likes),
-        _buildAction(context, Icons.thumb_down_outlined, video.dislikes),
         _buildAction(context, Icons.reply_outlined, 'Share'),
         _buildAction(context, Icons.download_outlined, 'Download'),
         _buildAction(context, Icons.library_add_outlined, 'Save'),

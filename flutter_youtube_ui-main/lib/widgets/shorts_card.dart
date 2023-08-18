@@ -68,17 +68,7 @@ class shortsCard extends StatelessWidget {
                               .copyWith(fontSize: 15.0),
                         ),
                       ),
-                      Flexible(
-                        child: Text(
-                          '${video.author.username} • ${video.viewCount} views • ${timeago.format(video.timestamp)}',
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context)
-                              .textTheme
-                              .caption!
-                              .copyWith(fontSize: 14.0),
-                        ),
-                      ),
+                     
                     ],
                   ),
                 ),

@@ -3,7 +3,10 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
 from .serializers import ProductSerilizer
+from .serializers import VideoSerilizer
+
 from .models import Product
+from .models import Video
 # Create your views here.
 
 """@api_view(['GET'])
@@ -53,3 +56,10 @@ def deleteProduct(request, pk):
     product.delete()
 
     return Response('Items delete successfully!')
+
+
+@api_view(['GET'])
+def getAllVideos(request):
+    videos = Video.objects.all()
+    serializer = VideoSerilizer(videos, many=True)
+    return Response(serializer.data)

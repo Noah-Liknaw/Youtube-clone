@@ -19,33 +19,26 @@ const User currentUser = User(
 
 class Video {
   final String id;
-  final User author;
+  final String catagory;
   final String title;
   final String thumbnailUrl;
   final String videoUrl;
-  final String duration;
-  final DateTime timestamp;
-  final String viewCount;
-  final String likes;
-  final String dislikes;
+  
 
   const Video({
     required this.id,
-    required this.author,
+    required this.catagory,
     required this.title,
     required this.thumbnailUrl,
     required this.videoUrl,
-    required this.duration,
-    required this.timestamp,
-    required this.viewCount,
-    required this.likes,
-    required this.dislikes,
+
   });
 }
 
 class Blog {
   final String id;
   final String author;
+  final String catagory;
   final String title;
   final String thumbnailUrl;
   final String videoUrl;
@@ -56,6 +49,7 @@ class Blog {
     required this.id,
     required this.author,
     required this.title,
+    required this.catagory,
     required this.thumbnailUrl,
     required this.videoUrl,
     required this.likes,
@@ -64,90 +58,89 @@ class Blog {
 }
 
 final List<Blog> blogs = [
-  Blog(id: "sdafadssad", author: "Abebe", title: "title", thumbnailUrl: "lung/v1.png", videoUrl: "https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube", likes: "likes", dislikes: "dislikes"),
-  Blog(id: "sdafadssad", author: "Abebe", title: "title", thumbnailUrl: "lung/v1.png", videoUrl: "https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube", likes: "likes", dislikes: "dislikes"),
-  Blog(id: "sdafadssad", author: "Abebe", title: "title", thumbnailUrl: "lung/v1.png", videoUrl: "https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube", likes: "likes", dislikes: "dislikes"),
-  Blog(id: "sdafadssad", author: "Abebe", title: "title", thumbnailUrl: "lung/v1.png", videoUrl: "https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube", likes: "likes", dislikes: "dislikes")
+  Blog(id: "sdafadssad", author: "Abebe", title: "title",catagory: "የሳንባ", thumbnailUrl: "lung-blog-2.jpg", videoUrl: "https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube", likes: "likes", dislikes: "dislikes"),
+  Blog(id: "sdafadssad", author: "Abebe", title: "title",catagory: "የሳንባ", thumbnailUrl: "lung-blog-1.jpg", videoUrl: "https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube", likes: "likes", dislikes: "dislikes"),
+  Blog(id: "sdafadssad", author: "Abebe", title: "title",catagory: "ኩላሊት", thumbnailUrl: "lung-blog-2.jpg", videoUrl: "https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube", likes: "likes", dislikes: "dislikes"),
+  Blog(id: "sdafadssad", author: "Abebe", title: "title",catagory: "ኩላሊት", thumbnailUrl: "lung-blog-1.jpg", videoUrl: "https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube", likes: "likes", dislikes: "dislikes"),
 ];
 
 final List<Video> videos = [
-  Video(
+    Video(
     id: 'x606y4QWrxo',
-    author: currentUser,
-    title: 'Flutter Clubhouse Clone UI Tutorial | Apps From Scratch',
-    thumbnailUrl: 'lung/v1.png',
-    videoUrl: 'https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube',
-    duration: '8:20',
-    timestamp: DateTime(2021, 3, 20),
-    viewCount: '10K',
-    likes: '958',
-    dislikes: '4',
+    catagory: "ኩላሊት",
+    title: 'የአንጀት በሽታ መንስኤው ምንድን ነው? ምን ምልክቶች አሉ?',
+    thumbnailUrl: 'kidney/v1.png',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+
+  ),  Video(
+    id: 'x606y4QWrxo',
+    catagory: "ኩላሊት",
+    title: 'የአንጀት በሽታ መንስኤው ምንድን ነው? ምን ምልክቶች አሉ?',
+    thumbnailUrl: 'kidney/v2.png',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+
+  ),  Video(
+    id: 'x606y4QWrxo',
+    catagory: "ኩላሊት",
+    title: 'የአንጀት በሽታ መንስኤው ምንድን ነው? ምን ምልክቶች አሉ?',
+    thumbnailUrl: 'kidney/kidney-video1.png',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+
+  ),  Video(
+    id: 'x606y4QWrxo',
+    catagory: "ኩላሊት",
+    title: 'የአንጀት በሽታ መንስኤው ምንድን ነው? ምን ምልክቶች አሉ?',
+    thumbnailUrl: 'kidney/kidney-video2.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+
   ),
   Video(
-    author: currentUser,
+    id: 'x606y4QWrxo',
+    catagory: "የጨጓራ ህመም",
+    title: 'የአንጀት በሽታ መንስኤው ምንድን ነው? ምን ምልክቶች አሉ?',
+    thumbnailUrl: 'gut/v1.png',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+
+  ),
+  Video(
+    catagory: "የጨጓራ ህመም",
     id: 'vrPk6LB9bjo',
+    title:
+        '5 ምግቦች ለአንጀት ጤንነት',
+    thumbnailUrl: 'video1.jpg',
+    videoUrl: 'sth.mp4',
+  ),
+  Video(
+    id: 'x606y4QWrxo',
+    catagory: "የጨጓራ ህመም",
+    title: '5 ምግቦች ለአንጀት ጤንነት',
+    thumbnailUrl: 'video2.jpeg',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+
+  ),
+  
+  Video(
+    id: 'x606y4QWrxo',
+    catagory: "የሳንባ",
+    title: '5 ምግቦች ለአንጀት ጤንነት',
+    thumbnailUrl: 'lung/v1.png',
+    videoUrl: 'https://www.youtube.com/watch?v=j4HjWy_rZA4&ab_channel=SolyTube',
+
+  ),
+  Video(
+    catagory: "የሳንባ",
+    id: 'vcadaf21312',
     title:
         'Build Flutter Apps Fast with Riverpod, Firebase, Hooks, and Freezed Architecture',
     thumbnailUrl: 'lung/v2.png',
     videoUrl: 'https://www.youtube.com/watch?v=Y2WmaZQIzCg&ab_channel=NewsETSocial',
-    duration: '22:06',
-    timestamp: DateTime(2021, 2, 26),
-    viewCount: '8K',
-    likes: '485',
-    dislikes: '8',
+
   ),
-  Video(
-    id: 'x606y4QWrxo',
-    author: currentUser,
-    title: 'Flutter Clubhouse Clone UI Tutorial | Apps From Scratch',
-    thumbnailUrl: 'lung/v1.png',
-    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
-    duration: '8:20',
-    timestamp: DateTime(2021, 3, 20),
-    viewCount: '10K',
-    likes: '958',
-    dislikes: '4',
-  ),
-  Video(
-    author: currentUser,
-    id: 'vrPk6LB9bjo',
-    title:
-        'Build Flutter Apps Fast with Riverpod, Firebase, Hooks, and Freezed Architecture',
-    thumbnailUrl: 'lung/v2.png',
-    videoUrl: 'sth.mp4',
-    duration: '22:06',
-    timestamp: DateTime(2021, 2, 26),
-    viewCount: '8K',
-    likes: '485',
-    dislikes: '8',
-  ),Video(
-    id: 'x606y4QWrxo',
-    author: currentUser,
-    title: 'Flutter Clubhouse Clone UI Tutorial | Apps From Scratch',
-    thumbnailUrl: 'lung/v1.png',
-    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
-    duration: '8:20',
-    timestamp: DateTime(2021, 3, 20),
-    viewCount: '10K',
-    likes: '958',
-    dislikes: '4',
-  ),
-  Video(
-    author: currentUser,
-    id: 'vrPk6LB9bjo',
-    title:
-        'Build Flutter Apps Fast with Riverpod, Firebase, Hooks, and Freezed Architecture',
-    thumbnailUrl: 'lung/v2.png',
-    videoUrl: 'sth.mp4',
-    duration: '22:06',
-    timestamp: DateTime(2021, 2, 26),
-    viewCount: '8K',
-    likes: '485',
-    dislikes: '8',
-  ),
+
 ];
+                        List<Video> filtered = [];   
 
-
+int count=0;
 
 
 
@@ -157,39 +150,51 @@ final List<Video> videos = [
 final List<Video> shortsVideos = [
   Video(
     id: 'rJKN_880b-M',
-    author: currentUser,
+    catagory: "ኩላሊት",
     title: 'Flutter Netflix Clone Responsive UI Tutorial | Web and Mobile',
-    thumbnailUrl: 'temp1.jpg',
-    videoUrl: 'sth.mp4',
-    duration: '1:13:15',
-    timestamp: DateTime(2020, 8, 22),
-    viewCount: '32K',
-    likes: '1.9k',
-    dislikes: '7',
+    thumbnailUrl: 'kidney/kidney-video5.png',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+
   ),
   Video(
     id: 'HvLb5gdUfDE',
-    author: currentUser,
+    catagory: "ኩላሊት",
     title: 'Flutter Facebook Clone Responsive UI Tutorial | Web and Mobile',
-    thumbnailUrl: 'temp1.jpg',
-    videoUrl: 'sth.mp4',
-    duration: '1:52:12',
-    timestamp: DateTime(2020, 8, 7),
-    viewCount: '190K',
-    likes: '9.3K',
-    dislikes: '45',
+    thumbnailUrl: 'kidney/kidney-video4.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+
   ),
   Video(
     id: 'h-igXZCCrrc',
-    author: currentUser,
+    catagory: "ኩላሊት",
     title: 'Flutter Chat UI Tutorial | Apps From Scratch',
-    thumbnailUrl: 'temp1.jpg',
-    videoUrl: 'sth.mp4',
-    duration: '1:03:58',
-    timestamp: DateTime(2019, 10, 17),
-    viewCount: '358K',
-    likes: '20k',
-    dislikes: '85',
+    thumbnailUrl: 'short3.png',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+
+  ),
+    Video(
+    id: 'h-igXZCCrrc',
+    catagory: "ኩላሊት",
+    title: 'Flutter Chat UI Tutorial | Apps From Scratch',
+    thumbnailUrl: 'short4.png',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+
+  ),
+    Video(
+    id: 'h-igXZCCrrc',
+    catagory: "የሳንባ",
+    title: 'Flutter Chat UI Tutorial | Apps From Scratch',
+    thumbnailUrl: 'short5.png',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+
+  ),
+    Video(
+    id: 'h-igXZCCrrc',
+    catagory: "የሳንባ",
+    title: 'Flutter Chat UI Tutorial | Apps From Scratch',
+    thumbnailUrl: 'short6.png',
+    videoUrl: 'https://www.youtube.com/watch?v=umhl2hakkcY',
+
   ),
 ];
 

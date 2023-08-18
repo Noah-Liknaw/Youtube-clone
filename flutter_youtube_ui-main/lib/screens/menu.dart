@@ -1,6 +1,9 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_youtube_ui/data.dart';
 import 'package:flutter_youtube_ui/screens/nav_screen.dart';
+import 'package:http/http.dart' as http;
 
 class Menu extends StatefulWidget {
   const Menu();
@@ -11,6 +14,7 @@ class Menu extends StatefulWidget {
 
 class _MenuState extends State<Menu> {
   bool darkMode = false;
+  List<dynamic> data = [];
 
   void chageMode() {
     setState(() {
@@ -64,13 +68,6 @@ class _MenuState extends State<Menu> {
   }
 
   Widget itemCard(double width, Image img, String name) {
-    if (name == "ኩላሊት") {
-      selectedOrgan = "kidney";
-    } else if (name == "የሳንባ") {
-      selectedOrgan = "lung";
-    } else if (name == "የጨጓራ ህመም") {
-      selectedOrgan = "gut";
-    }
     return Container(
       width: width * 0.65,
       margin: const EdgeInsets.all(10),
@@ -79,6 +76,14 @@ class _MenuState extends State<Menu> {
           img,
           TextButton(
             onPressed: () {
+              selectedOrgan = name;
+              filtered = [];
+                        for(int i=0;i<videos.length;i++){
+                          if(videos[i].catagory == selectedOrgan){
+                            filtered.add(videos[i]);
+                          }
+                        }    
+                        count =filtered.length; 
               Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) =>  NavScreen()));
@@ -110,4 +115,16 @@ class _MenuState extends State<Menu> {
       ),
     );
   }
+  Future<List<dynamic>> fetchData() async {
+  final response = await http.get(Uri.parse('http://127.0.0.1:8000/api/getAllVideos/'));
+      print("hey");
+
+  if (response.statusCode == 200) {
+    // Parse the response JSON
+    final data = json.decode(response.body);
+    return data;
+  } else {
+    throw Exception('Failed to fetch data');
+  }
+}
 }

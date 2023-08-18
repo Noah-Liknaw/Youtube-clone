@@ -112,13 +112,13 @@ class _bookSectionState extends State<bookSection> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Description 1:',
+                        'gut-book-1',
                         style: TextStyle(fontSize: 18),
                       ),
                       SizedBox(height: 8.0),
                       Text(
                         //  item['description1'],
-                        'A widget’s state can be managed in several ways, but in our example the widget itself, FavoriteWidget, will manage its own state. ',
+                        'This is a book on health. it helps. lore impusm',
                         style: TextStyle(fontSize: 16),
                       ),
                     ],

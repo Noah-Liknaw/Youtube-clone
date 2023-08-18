@@ -29,7 +29,7 @@ class blogsSection extends StatelessWidget {
                         
                         return BlogCard(blog: blog);
                       },
-                      childCount: shortsVideos.length,
+                      childCount: blogs.length,
                     ),
                   ),
                 ),
